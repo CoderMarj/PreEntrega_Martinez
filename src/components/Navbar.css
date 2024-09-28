@@ -15,19 +15,24 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-image: url('https://images.pexels.com/photos/1267360/pexels-photo-1267360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    /*background-image: url("../assets/fondo.jpg");*/
+    /*background-image: url('https://images.pexels.com/photos/1267360/pexels-photo-1267360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');*/
     background-position: center;
     background-size: cover;
+    /*background-image: linear-gradient(to left,pink,orange);*/
+    background-image: linear-gradient(to left,#42275a, #734b6d)
   }
   
   .logo-container {
     padding-top: 3px;
     cursor: pointer;
+    
    
   }
   
   .nav-container {
     display: flex;
+    
   }
   
   .nav-container li {
@@ -37,13 +42,31 @@ body {
   
   .nav-container li a {
     text-decoration: none;
-    color: white;
-    font-weight: 500;
+    color: rgb(255, 255, 255);;
+    font-weight: 800;
     font-size: 18px;
+  
   }
   
   .logo-container {
     padding-top: 3px;
+    padding-left: 20px;
     cursor: pointer;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  
+  
   }
+
+  .texto-encima{
+    position: absolute;
+    top: 44%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    color: rgb(244, 244, 247);
+
+  }
+
+
   

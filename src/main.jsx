@@ -3,10 +3,9 @@ import { createRoot } from 'react-dom/client'
 import Navbar from './components/Navbar'
 
 
-
-
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    < Navbar />
+    < Navbar  saludo = "  Your Welcome to my Products Store " />
+    
   </StrictMode>,
 )

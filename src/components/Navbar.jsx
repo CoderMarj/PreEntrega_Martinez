@@ -1,13 +1,12 @@
 //import mi archivo css
+import CartWidget from './CartWidget';
+import ItemListContainer from './ItemListContainer';
 import './Navbar.css';
-import carrito from "../assets/buying-48.png"
 
-
-const Navbar = () => {
+const Navbar = ({saludo}) => {
   return (
     <>
       <header className="header">
-
         {/* links de navegación */}
         <nav>
           <ul className="nav-container">
@@ -18,21 +17,22 @@ const Navbar = () => {
               <a href="/">Productos</a>
             </li>
             <li>
-              <a href="/">Blog</a>
+              <a href="/">Caballero</a>
             </li>
             <li>
-              <a href="/">Contacto</a>
+              <a href="/">Damas</a>
+            </li>
+            <li>
+              <a href="/">Niños</a>
             </li>
           </ul>
 
         </nav>
 
-        {/* carrito */}
-        <div className="logo-container">
-          <img src={carrito} alt="logo" />
-        </div>
-
+        < CartWidget />
       </header>
+      
+      < ItemListContainer greeting = {saludo} />
     </>
   )
 }
